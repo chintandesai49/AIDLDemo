@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <EditText
+    android:id="@+id/num1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:hint="@string/no_1"
+    android:inputType="number"
+    android:maxLength="9"/>
+
+  <EditText
+    android:id="@+id/num2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/num1"
+    android:hint="@string/no_2"
+    android:inputType="number"
+    android:maxLength="9"/>
+
+  <Button
+    android:id="@+id/btnAdd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/num2"
+    android:text="@string/add_num"/>
+
+  <Button
+    android:id="@+id/btnNonPremitive"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/btnAdd"
+    android:text="@string/get_non_premitive_type"/>
+
+  <Button
+    android:id="@+id/btnCall"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_below="@+id/btnNonPremitive"
+    android:text="@string/place_call"/>
+
+  <TextView
+    android:id="@+id/total"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btnCall"
+    android:textColor="@android:color/black"/>
+
+</RelativeLayout>

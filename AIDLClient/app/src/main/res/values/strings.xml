@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">AIDL Client</string>
+  <string name="add_num">Add Number</string>
+  <string name="place_call">Make Fake Call</string>
+  <string name="no_1">Number  1</string>
+  <string name="no_2">Number 2</string>
+  <string name="get_non_premitive_type">Get Non Premitive Type Data</string>
+</resources>
