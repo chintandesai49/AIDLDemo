@@ -1,5 +1,9 @@
-*.iml
+ *.iml
+app/app.iml
+.gradle/
 .gradle
+.idea
+build
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
@@ -7,3 +11,9 @@
 /build
 /captures
 .externalNativeBuild
+*.apk
+
+# Generated files
+bin/
+gen/
+out/

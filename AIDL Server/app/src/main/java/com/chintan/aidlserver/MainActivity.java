@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Dexter.initialize(this);
-        Dexter.checkPermission(new PermissionListener() {
+        Dexter.withActivity(this).withPermission(Manifest.permission.CALL_PHONE).withListener(new PermissionListener() {
             @Override
             public void onPermissionGranted(PermissionGrantedResponse response) {
+
             }
 
             @Override
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
                 token.continuePermissionRequest();
             }
-        }, Manifest.permission.CALL_PHONE);
+        }).check();
     }
 
     public static List<String> getList() {
